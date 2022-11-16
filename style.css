@@ -1,0 +1,283 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+#pokeBox{
+	display:flex;
+	flex-flow:row wrap;
+	width:95%;
+	margin:1em auto;
+}
+.pokeCard{
+	border: none;
+	width:100%;
+	height:150px;
+	display:flex;
+	border-radius:1em;
+	margin:.2em;
+	
+}
+
+.pokeCard .pokeValores{
+	width:60%;
+	padding:10px 10px;
+
+}
+
+.pokeCard .pokeValores .nome{
+	font-size:1.5em;
+	font-weight:normal;
+	text-transform:capitalize;
+	color:white;
+}
+.pokeCard .pokeValores .numero{
+	margin:10px 0;
+	font-size:.60em;
+	color:white;
+	
+}
+
+.pokeCard .pokeValores .tipoBox{
+	margin-top:.2em;	
+	
+}
+.pokeCard .pokeValores .tipoBox .tipo{
+	font-size:1em;
+	padding:.15em;
+	text-align:center;
+	border:none;
+	border-radius:1em;
+	margin:.1em;
+	color:white;
+	border:1.5px solid white;
+	width:55%;
+	
+}
+.pokeCard .pokeValores button{
+	padding:.4em .6em;
+	border:none;
+	margin-top:.2em;
+	border-radius:1em;
+	background-color:white;
+}
+.pokeCard .pokeImagem {
+	width:40%;
+	display:flex;
+	padding:2%;
+}
+
+.pokeCard .pokeImagem img{
+	width:80%;
+	height:80%;
+	margin:auto;
+}
+
+.normal{background-color:#a8a77a;}
+.fire{background-color:#ee8130;}
+.water{background-color:#6390f0;}
+.electric{background-color:#f7d02c;}
+.grass{background-color:#7ac74c;}
+.ice{background-color:#96d9d6;}
+.fighting{background-color:#c22e28;}
+.poison{background-color:#a33ea1;}
+.ground{background-color:#e2bf65;}
+.flying{background-color:#a98ff3;}
+.psychic{background-color:#f95587;}
+.bug{background-color:#a6b91a;}
+.rock{background-color:#b6a136;}
+.ghost{background-color:#735797;}
+.dragon{background-color:#6f35fc;}
+.dark{background-color:#705746;}
+.steel{background-color:#b7b7ce;}
+.fairy{background-color:#d685ad;}
+
+
+
+/* modal */
+/* o Modal (background) */
+.modal {
+  cdisplay: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal, conteudo/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: .2em;
+  border: 1px solid #888;
+  width: 80%; 
+  border-radius:1em;
+}
+
+
+.modal-content  .pokeImagem {
+	width:80%;
+	display:flex;
+	margin:1em auto;
+	padding:1em;
+	border-radius:1em;
+	
+}
+.modal-content  .pokeImagem img{
+	width:90%;
+	height:90%;
+	margin:auto;
+}
+
+
+.modal-content .nome{
+	font-size:1.6em;
+	font-weight:normal;
+	text-transform:capitalize;
+	color:;
+	text-align:center;
+}
+
+.modal-content  .numero{
+	font-size:1.2em;
+	font-weight:normal;
+	text-transform:capitalize;
+	color:;
+	margin-top:.5em;
+	text-align:center;
+}
+
+.modal-content .tipoBox{
+	margin-top:.2em;
+	display:flex;
+	justify-content:center;	
+}
+.modal-content .tipoBox .tipo{
+	font-size:1em;
+	padding:.25em;
+	text-align:center;
+	border:none;
+	border-radius:1em;
+	margin:.1em;
+	color:white;
+	border:1.5px solid white;
+	width:40%;	
+}
+.modal-content .biometria{
+	display:flex;
+	justify-content:center;
+	padding:.4em;
+}
+.modal-content .biometria p{
+	width:40%;
+
+}
+table {
+	margin:0 auto;
+	border-spacing: 0;
+	width: 90%;
+	border: 1px solid #ddd;
+}
+
+th, td {
+	text-align: left;
+	padding: .4em;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+/* The Close Button */
+.close {
+	color: #000;
+	ffloat: right;
+	font-size: 2em;
+	font-weight: bold;
+	display:block;
+	text-align:center;
+	margin-top:.2em;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#mais{
+	text-align:center;
+	margin-bottom:2em;
+}
+#mais button {
+	padding:.5em 1.2em;
+	border:none;
+	text-align:center;
+	font-size:1.2em;
+	border-radius:1em;
+	color:white;
+}
+
+
+
+@media only screen and (max-width: 600px) {}
+@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 768px) {
+	#pokeBox {
+		width:95%;
+		margin:1em auto;
+	}
+	#pokeBox .pokeCard{
+		width:49%;
+		margin:.1em auto;	
+	}	
+	.pokeCard .pokeValores .nome{
+		font-size:1.5em;
+	}
+	.pokeCard .pokeValores .numero{
+		margin:10px 0;
+		font-size:.60em;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#pokeBox {
+		width:85%;
+		margin:1.2em auto;
+	}
+	#pokeBox .pokeCard{
+		width:32%;
+		margin:.1em auto;
+	}
+}
+@media only screen and (min-width: 1200px) {}
+
+
+
+
+/*
+normal: A8A77A #
+fire Type: EE8130 #
+water Type: 6390F0    #
+electric Type: F7D02C  #
+grass Type: 7AC74C  #
+ice Type: 96D9D6  #
+fighting Type: C22E28  #
+poison Type: A33EA1  #
+ground Type: E2BF65 #
+flying Type: A98FF3 #
+psychic Type: F95587 #
+bug Type: A6B91A #
+rock Type: B6A136 #
+ghost Type: 735797 #
+dragon Type: 6F35FC #
+dark Type: 705746 #
+steel Type: B7B7CE #
+fairy Type: D685AD #
+*/

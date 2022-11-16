@@ -78,8 +78,8 @@ function mostrarDetalhes(detalhes){
 						${tipos(pokemon.types)}	
 					</div>
 					<div class="biometria">
-						<p class="peso">Peso: ${pokemon.weight}</p>
-						<p class="altura">Altura: ${pokemon.height}</p>	
+						<p class="peso">Peso: ${pokemon.weight}hg</p>
+						<p class="altura">Altura: ${pokemon.height}dm</p>	
 					</div>
 					<section class="">
 						<table>

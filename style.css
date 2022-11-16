@@ -8,7 +8,7 @@
 	display:flex;
 	flex-flow:row wrap;
 	width:95%;
-	margin:1em auto;
+	margin:1em;
 }
 .pokeCard{
 	border: none;
@@ -98,7 +98,6 @@
 /* modal */
 /* o Modal (background) */
 .modal {
-  cdisplay: none; 
   position: fixed; 
   z-index: 1; 
   left: 0;
@@ -113,16 +112,17 @@
 /* Modal, conteudo/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto; 
+  margin:3vh auto; 
   padding: .2em;
   border: 1px solid #888;
   width: 80%; 
   border-radius:1em;
+  max-width: 600px;
 }
 
 
 .modal-content  .pokeImagem {
-	width:80%;
+	width:70%;
 	display:flex;
 	margin:1em auto;
 	padding:1em;
@@ -131,7 +131,7 @@
 }
 .modal-content  .pokeImagem img{
 	width:90%;
-	height:90%;
+	height:70%;
 	margin:auto;
 }
 
@@ -140,7 +140,6 @@
 	font-size:1.6em;
 	font-weight:normal;
 	text-transform:capitalize;
-	color:;
 	text-align:center;
 }
 
@@ -148,7 +147,6 @@
 	font-size:1.2em;
 	font-weight:normal;
 	text-transform:capitalize;
-	color:;
 	margin-top:.5em;
 	text-align:center;
 }
@@ -176,6 +174,7 @@
 }
 .modal-content .biometria p{
 	width:40%;
+	text-align: center;
 
 }
 table {
@@ -183,6 +182,7 @@ table {
 	border-spacing: 0;
 	width: 90%;
 	border: 1px solid #ddd;
+	text-transform:capitalize;
 }
 
 th, td {
@@ -245,6 +245,12 @@ tr:nth-child(even) {
 		margin:10px 0;
 		font-size:.60em;
 	}
+	.modal-content {
+		margin: 3vh auto; 
+		padding: .2em;
+		width: 80%; 
+		max-width: 400px;
+	  }
 }
 @media only screen and (min-width: 992px) {
 	#pokeBox {
